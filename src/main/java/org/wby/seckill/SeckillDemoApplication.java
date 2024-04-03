@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("org.wby.seckill.pojo")
+@MapperScan("org.wby.seckill.mapper")
 public class SeckillDemoApplication {
 
     public static void main(String[] args) {
