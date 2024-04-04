@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  */
 public class ValidatorUtil {
 
-    private static final Pattern MOBILE_PATTERN = Pattern.compile("^1[3-9]\\\\d{9}$");
+    private static final Pattern MOBILE_PATTERN = Pattern.compile("^1[3-9]\\d{9}$");
 
     /**
      * 功能：校验是否是手机号

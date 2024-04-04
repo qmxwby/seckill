@@ -1,7 +1,11 @@
+# 项目端口号
+server:
+  port: 8080
+
 spring:
   application:
     name: seckill-demo
-  # thymeleaf ??
+  # thymeleaf 配置
   thymeleaf:
     cache: false
   datasource:
@@ -10,26 +14,30 @@ spring:
     username: root
     password: root123456
     hikari:
-      # ?????
+      # 连接池名称
       pool-name: DateHikariCP
       minimum-idle: 5
-      # ?????????????10???600000?
+      # 连接超时时间
       idle-timeout: 1800000
       maximum-pool-size: 10
       auto-commit: true
       max-lifetime: 1800000
       connection-timeout: 3000
-      # ?????????????
+      # 测试链接sql语句
       connection-test-query: SELECT 1
 
-# Mybatis-plus??
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+# Mybatis-plus配置
 mybatis-plus:
-  # ??Mapper.xml ????
+  # mapper位置
   mapper-locations: classpath*:/mapper/*Mapper.xml
-  # ??Mybatis-plus??????????????????
+  # 实体类包名
   type-aliases-package: org.wby.seckill.pojo
 
-# Mybatis-plus SQL??????????????Mapper.xml?????
+# Mybatis-plus
 logging:
   level:
     org.wby.seckill.mapper: debug

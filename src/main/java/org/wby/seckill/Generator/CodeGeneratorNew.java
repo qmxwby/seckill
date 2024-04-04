@@ -47,15 +47,19 @@ public class CodeGeneratorNew {
                     builder.addInclude("t_user")    // 生成几个表
                             .addTablePrefix("t_")
                             .serviceBuilder()   // service策略配置
+                            .enableFileOverride()// 允许覆盖
                             .formatServiceFileName("%sService")
                             .formatServiceImplFileName("%sServiceImpl")
                             .entityBuilder()    // entity策略配置
+                            .enableFileOverride()
                             .enableLombok()
                             .enableTableFieldAnnotation() //允许加上注解
-                            .controllerBuilder()
+                            .controllerBuilder()    // controller策略
+                            .enableFileOverride()
                             .enableRestStyle()  //开启RestController
-                            .mapperBuilder()
+                            .mapperBuilder() //Mapper策略
                             .enableMapperAnnotation()
+                            .enableFileOverride()
                             .formatXmlFileName("%sMapper");
                 })
                 .templateEngine(new FreemarkerTemplateEngine())

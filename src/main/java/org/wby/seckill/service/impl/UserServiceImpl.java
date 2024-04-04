@@ -1,7 +1,7 @@
 package org.wby.seckill.service.impl;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.thymeleaf.util.StringUtils;
 import org.wby.seckill.pojo.User;
 import org.wby.seckill.mapper.UserMapper;
 import org.wby.seckill.service.IUserService;
