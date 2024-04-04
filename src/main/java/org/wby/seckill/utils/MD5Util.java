@@ -18,13 +18,13 @@ public class MD5Util {
      * @return
      */
     public static String inputPassToFormPass(String inputPass) {
-        String src = SALT.charAt(0) + SALT.charAt(2)
+        String src = ""+SALT.charAt(0) + SALT.charAt(2)
                 + inputPass + SALT.charAt(1) + SALT.charAt(3);
         return md5(src);
     }
 
     public static String formPassToDBPass(String formPass, String salt) {
-        String pass = salt.charAt(0) + salt.charAt(2)
+        String pass = ""+salt.charAt(0) + salt.charAt(2)
                 + formPass + salt.charAt(1) + salt.charAt(3);
         return md5(pass);
     }
