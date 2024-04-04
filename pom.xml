@@ -29,16 +29,20 @@
 <!--        Mybatis-plus -->
         <dependency>
             <groupId>com.baomidou</groupId>
-            <!--下面坐标根据自己使用的SpringBoot版本二选一-->
-            <!--SpringBoot2使用此版本-->
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.0</version>
+            <artifactId>mybatis-plus-spring-boot3-starter </artifactId>
+            <version>3.5.5</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>3.5.2</version>-->
+<!--        </dependency>-->
+
 <!--        Mybatis-plus逆向生成器-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.4.0</version>
+            <version>3.5.4</version>
         </dependency>
         <dependency>
             <groupId>org.freemarker</groupId>
